@@ -23,8 +23,8 @@
         "../node_modules/font-awesome/css/font-awesome.css",
     		"assets/css/Checkboxes.css",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "../node_modules/bootstrap/dist/css/bootstrap-theme.css",
-    		"assets/css/Site.css"
+        "../node_modules/bootstrap/dist/css/bootstrap-theme.css"
+    		//"assets/css/Site.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
