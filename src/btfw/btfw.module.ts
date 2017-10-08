@@ -6,8 +6,12 @@ import { ContentComponent } from './content/content.component'
 import { TitleBarComponent } from './title-bar/title-bar.component'
 import { TopBarComponent } from './top-bar/top-bar.component'
 import { StatusBarComponent } from './status-bar/status-bar.component';
+import { ScreenBelowLarge } from './directives/screen-below-large.directive'
+import { ScreenLarge } from './directives/screen-large.directive'
 
 import { FrameworkConfigService } from '../btfw/services/framework-config.service';
+import { ScreenService } from '../btfw/services/screen.service';
+import { MenuService } from '../btfw/services/menu.service';
 
 @NgModule({
   imports: [
@@ -18,10 +22,14 @@ import { FrameworkConfigService } from '../btfw/services/framework-config.servic
     ContentComponent,
     TitleBarComponent,
     TopBarComponent,
-    StatusBarComponent
+    StatusBarComponent,
+    ScreenBelowLarge,
+    ScreenLarge
   ],
   providers: [
-    FrameworkConfigService
+    FrameworkConfigService,
+    ScreenService,
+    MenuService
   ],
   exports: [
     FrameworkBodyComponent

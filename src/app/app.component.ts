@@ -4,6 +4,7 @@ import {
   FrameworkConfigService, 
   FrameworkConfigSettings 
 } from '../btfw/services/framework-config.service';
+import { MenuService } from '../btfw/services/menu.service';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ import {
 })
 
 export class AppComponent {
-  constructor (private frameworkConfigService: FrameworkConfigService) {
+  constructor (private frameworkConfigService: FrameworkConfigService,
+      private menuService: MenuService) {
     let config:FrameworkConfigSettings = {
       socialIcons: [
         { imageFile: 'assets/social-fb-bw.png', alt: 'Facebook', link: 'http://www.facebook.com'},
