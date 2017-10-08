@@ -5,6 +5,7 @@ import {
   FrameworkConfigSettings 
 } from '../btfw/services/framework-config.service';
 import { MenuService } from '../btfw/services/menu.service';
+import { initialMenuItems } from './app.menu';
 
 @Component({
   selector: 'app-root',
@@ -28,5 +29,7 @@ export class AppComponent {
     };
 
     frameworkConfigService.configure(config);
+
+    menuService.items = initialMenuItems;
   }
 }
