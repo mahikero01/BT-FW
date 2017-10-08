@@ -1,3 +1,18 @@
-<p>
-  menu works!
-</p>
+<nav>
+  <ul>
+    <li *ngFor="let item of menuService.items">
+      <btfw-menu-item 
+          [item]="item" [ngClass]="{'vertical-menu': menuService.isVertical }">
+      </btfw-menu-item>
+    </li>
+  </ul>
+</nav>
+
+<button 
+    *ngIf="!menuService.showingLeftSideMenu"
+    class="btn btn-sm"
+    [ngClass]="{'horizontal': !menuService.isVertical }"
+    (click)="menuService.toggleMenuOrientation()">
+  <span *ngIf="menuService.isVertical" class="glyphicon glyphicon-menu-up"></span>
+  <span *ngIf="!menuService.isVertical" class="glyphicon glyphicon-menu-left"></span>
+</button>
