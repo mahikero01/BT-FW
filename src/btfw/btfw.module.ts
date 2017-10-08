@@ -17,7 +17,8 @@ import { FrameworkConfigService } from '../btfw/services/framework-config.servic
     FrameworkBodyComponent,
     ContentComponent,
     TitleBarComponent,
-    TopBarComponent
+    TopBarComponent,
+    StatusBarComponent
   ],
   providers: [
     FrameworkConfigService
