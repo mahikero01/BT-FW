@@ -2,7 +2,8 @@
   <ul>
     <li *ngFor="let item of menuService.items">
       <btfw-menu-item 
-          [item]="item" [ngClass]="{'vertical-menu': menuService.isVertical }">
+          [item]="item" [ngClass]="{'vertical-menu': menuService.isVertical }"
+          [parentIsPopup]="false">
       </btfw-menu-item>
     </li>
   </ul>
