@@ -1,6 +1,5 @@
 <div class="menu-item" 
-    [ngClass]="{'vertical-menu': menuService.isVertical, 'router-link-active': isActiveRoute }"
-    (click)="menuService.showingLeftSideMenu = false">    
+    [ngClass]="{'vertical-menu': menuService.isVertical, 'router-link-active': isActiveRoute }">    
   <span class="glyphicon {{ item.icon }}"></span>
   <span>{{ item.text.toUpperCase() }}</span>
 
@@ -21,4 +20,5 @@
   (mouseenter)="onPopupMouseEnter($event)"
   [style.left.px]="popupLeft"
   [style.top.px]="popupTop">
+  <!--@visibilityChanged-->
 </btfw-popup-menu>

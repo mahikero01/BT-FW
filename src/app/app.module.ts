@@ -11,6 +11,7 @@ import { appRoutes } from './app.routing';
 import { CountryDetailComponent } from './country-detail/country-detail.component';
 import { CountryListComponent } from './country-list/country-list.component';
 import { CountryMaintComponent } from './country-maint/country-maint.component';
+import { AuthenticatedUserComponent } from './authenticated-user/authenticated-user.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CountryMaintComponent } from './country-maint/country-maint.component';
     SettingsComponent,
     CountryDetailComponent,
     CountryListComponent,
-    CountryMaintComponent
+    CountryMaintComponent,
+    AuthenticatedUserComponent
   ],
   imports: [
     BrowserModule,
