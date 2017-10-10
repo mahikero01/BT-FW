@@ -14,6 +14,7 @@ import { MenuComponent } from './menus/menu/menu.component';
 import { MenuItemComponent } from './menus/menu-item/menu-item.component';
 import { PopupMenuComponent } from './menus/popup-menu/popup-menu.component';
 import { SignInComponent } from './users/sign-in/sign-in.component';
+import { RegisterUserComponent } from './users/register-user/register-user.component';
 
 import { FrameworkConfigService } from '../btfw/services/framework-config.service';
 import { ScreenService } from '../btfw/services/screen.service';
@@ -36,7 +37,8 @@ import { MenuService } from '../btfw/services/menu.service';
     MenuComponent,
     MenuItemComponent,
     PopupMenuComponent,
-    SignInComponent
+    SignInComponent,
+    RegisterUserComponent
   ],
   providers: [
     FrameworkConfigService,

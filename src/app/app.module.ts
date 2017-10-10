@@ -13,6 +13,8 @@ import { CountryListComponent } from './country-list/country-list.component';
 import { CountryMaintComponent } from './country-maint/country-maint.component';
 import { AuthenticatedUserComponent } from './authenticated-user/authenticated-user.component';
 
+import { UserService } from './services/user.service';
+import { UserApi } from '../btfw/users/user-api';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,10 @@ import { AuthenticatedUserComponent } from './authenticated-user/authenticated-u
     BtfwModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+    UserService,
+    { provide: UserApi,  useExisting: UserService}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
