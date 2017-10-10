@@ -12,6 +12,7 @@ import { ScreenLarge } from './directives/screen-large.directive';
 import { MenuComponent } from './menus/menu/menu.component';
 import { MenuItemComponent } from './menus/menu-item/menu-item.component';
 import { PopupMenuComponent } from './menus/popup-menu/popup-menu.component';
+import { SignInComponent } from './users/sign-in/sign-in.component';
 
 import { FrameworkConfigService } from '../btfw/services/framework-config.service';
 import { ScreenService } from '../btfw/services/screen.service';
@@ -32,7 +33,8 @@ import { MenuService } from '../btfw/services/menu.service';
     ScreenLarge,
     MenuComponent,
     MenuItemComponent,
-    PopupMenuComponent
+    PopupMenuComponent,
+    SignInComponent
   ],
   providers: [
     FrameworkConfigService,
