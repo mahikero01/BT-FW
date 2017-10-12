@@ -3,7 +3,7 @@ import { ActivatedRoute, Params, Router} from '@angular/router';
 
 import { AppDataService } from '../services/app-data.service';
 import { Country } from '../view-models/country';
-import { FieldDefinition } from '../../fw/dynamic-forms/field-definition';
+import { FieldDefinition } from '../../btfw/dynamic-forms/field-definition';
 
 @Component({
   selector: 'app-country-detail',
