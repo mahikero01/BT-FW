@@ -47,8 +47,8 @@ export class MenuItemComponent implements OnInit {
       private el: ElementRef, private renderer: Renderer ) { }
 
   checkActiveRoute(route: string) {
-      //console.log('actibo ' + '/' + this.item.route + ' at itu ' + route);
-      this.isActiveRoute = (route == '/' + this.item.route);
+      //console.log('actibo ' + '/' + this.item.route + ' at itu ' + route  + ' --- ' + this.isActiveRoute);
+      this.isActiveRoute = (route == this.item.route);
   }
 
   ngOnInit(): void {
