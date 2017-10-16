@@ -58,7 +58,9 @@ import { MenuService } from '../btfw/services/menu.service';
   exports: [
     FrameworkBodyComponent,
     DynamicFormComponent,
-    PanelComponent
+    PanelComponent,
+    ScreenLarge,
+    ScreenBelowLarge
   ]
 })
 export class BtfwModule { }
